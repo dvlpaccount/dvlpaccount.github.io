@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../source/css/Profile.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+</head>
+<body>
+    
+    <div class="container">
+        <div class="top">
+            <div class="left">
+                <img src="../source/imgs/avatar.png" alt="" srcset="">
+            </div>
+            <div class="center">
+                <h1 class="h1-space">NHadaif</h1>
+                <p class="p-space"> Lorem ipsum ku pun tak tau maksudnya apa ?! tapi yasudahlah
+                    awok lorem ipsum quar par te le ni uinda no escreptyialos
+                </p>
+                <div class="link">
+                    <i class="fas fa-link"> <a target="_blank" href="https://google.com">https://google.com</a> </i>
+                </div>
+            </div>
+            <div class="right">
+                <a href="#editProfile"><div class="button-right"> Edit Profile </div></a> 
+            </div>
+        </div>
+
+        <div class="sosmed">
+            <div>
+            </div>
+        </div>
+    
+        <div class="bottom">
+            <div class="square">
+                <a href="#popupTruth"><i class="fas fa-question"></i></a>
+            </div>
+            <div class="square">
+                <i class="fa fa-hand-lizard"></i>
+            </div>
+            <div class="square">
+                <i class="fa fa-list-alt"></i>
+            </div>
+            <div class="square">
+                <i class="fa fa-check-square"></i>
+            </div>
+        </div>
+
+        <!-- Pop Up Section -->
+        <!-- When we put in laravel put this line to another file and yus @include("locationFile.namefile") -->
+
+        <div id="popupTruth" class="overlay">
+            <div class="popup">
+                <h2>Give Him A Question!</h2>
+                
+                <a class="close" href="#">&times;</a>
+                <div class="content">
+                    Question
+                    <form action="" method="post">
+                        <br>
+                        <textarea name="Question" id="" cols="70" rows="5"></textarea>
+                    </form>
+                    <br>
+                    <br>
+                    Link Something : <a href="#popupTruthLink"><i class="fas fa-link"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div id="popupTruthLink" class="overlay">
+            <div class="popup">
+                <h2>Give Him A Question!</h2>
+                
+                <a class="close" href="#">&times;</a>
+                <div class="content">
+                    Question
+                    <form action="" method="post">
+                        <input contenteditable="20" class="asking" type="text" name="" id="">
+                        <br>
+                        Link
+                        <br>
+                        <input contenteditable="20" class="asking" type="text" name="" id="">
+                    </form>
+                    
+                </div>
+            </div>
+        </div>
+
+        <div id="editProfile" class="overlay">
+            <div class="popup">
+                <h2>Edit Profile!</h2>
+                
+                <a class="close" href="#">&times;</a>
+                <div class="content">
+
+                    <form action="" method="post">
+                    <img src="../source/imgs/avatar.png" alt="">
+                    <br>
+                    <input type="file" name="" id="">
+                    <br>
+                    <br>
+                    Username
+                    <br>
+                    <input class="editText" type="text" name="" id="" placeholder="NawlHadaif">
+                    <br>
+                    Bio
+                        <br>
+                        <textarea name="Question" id="" cols="70" rows="5">
+                        </textarea>
+                    </form>
+                    
+                    <br>
+                    Link Something : <a href="#popupTruthLink"><i class="fas fa-link"></i></a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
